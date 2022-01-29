@@ -1,71 +1,20 @@
 {
   "name": "scarlex",
-  "version": "0.0.1",
-  "description": "lavalink client for discord",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "lint": "eslint --ext .ts ./src",
-    "types": "dts-bundle --removeSource --name scarlex --main ./dist --out ../typings/index.d.ts --baseDir ./dist",
-    "docs": "typedoc --json ./docs.json --mode file --excludeProtected --excludePrivate --excludeExternals src/structures",
-    "publish:stable": "yarn build && yarn types && yarn publish --access=public",
-    "publish:beta": "yarn build && yarn types && yarn publish --tag beta --access=public"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/avixityyt/scarlex.git"
   },
-  
-  "keywords": [
-    "lavalink",
-    "discord",
-    "music",
-    "bot",
-    "discord.js",
-    "eris"
-  ],
-  "author": "avixity",
-  "license": "Apache-2.0",
-  "bugs": "https://github.com/avixityyt/scarlex",
-  "devDependencies": {
-    "@types/node": "^16.6.1",
-    "@types/ws": "^7.4.7",
-    "@typescript-eslint/eslint-plugin": "^4.29.2",
-    "@typescript-eslint/parser": "^4.29.2",
-    "dts-bundle": "^0.7.3",
-    "eslint": "^7.7.0",
-    "typedoc": "^0.21.5",
-    "typedoc-plugin-no-inherit": "^1.2.0",
-    "typescript": "^4.3.5"
-  },
-  "dependencies": {
-    "@discordjs/collection": "^0.2.1",
-    "petitio": "^1.3.2",
-    "ws": "^8.1.0"
-  },
-  "engines": {
-    "node": ">=16.0.0"
-  },
-  "eslintConfig": {
-    "root": true,
-    "parser": "@typescript-eslint/parser",
-    "plugins": [
-      "@typescript-eslint"
-    ],
-    "rules": {
-      "object-curly-spacing": [
-        "error",
-        "always"
-      ]
-    },
-    "extends": [
-      "eslint:recommended",
-      "plugin:@typescript-eslint/recommended"
-    ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avixityyt/scarlex/issues"
   },
   "homepage": "https://github.com/avixityyt/scarlex#readme"
 }
